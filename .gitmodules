@@ -1,0 +1,3 @@
+[submodule "kataru-godot"]
+	path = kataru-godot
+	url = https://github.com/kataru-lang/kataru-godot
