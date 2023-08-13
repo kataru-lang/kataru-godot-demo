@@ -17,4 +17,4 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-KataruManager="*res://kataru-godot/manager.gd"
+Kataru="*res://kataru-godot/kataru.gd"
