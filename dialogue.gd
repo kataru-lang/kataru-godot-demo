@@ -4,11 +4,12 @@ extends Node
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Kataru.choices.connect(_on_choices)
-	Kataru.goto_passage("Start")
+	Kataru.run_passage("Start")
 	Kataru.next("")
 	Kataru.next("")
 	Kataru.next("")
 	Kataru.next("Yes")
+	Kataru.next("")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

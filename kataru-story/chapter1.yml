@@ -12,10 +12,10 @@ characters:
   June:
 
 commands:
-  Wait:
+  wait:
     duration: 0.3
 
-  $character.SetAnimatorTrigger:
+  $character.set_animator_trigger:
     clip: ""
 
 onExit:
@@ -33,12 +33,12 @@ YesCoffee:
   - May: Yeah, thanks!
   - set:
       $coffee +: 1
-  - May.SetAnimatorTrigger: ["drinkcoffee"]
+  - May.set_animator_trigger: ["drinkcoffee"]
   - call: End
 
 NoCoffee:
   - May: No thanks.
-  - Wait: { duration: 1 }
+  - wait: { duration: 1 }
   - June: Want to end this story?
   - call: End
 
