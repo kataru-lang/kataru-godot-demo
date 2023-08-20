@@ -7,7 +7,6 @@ func _ready():
 	Kataru.run_passage("Start")
 	Kataru.next("")
 	Kataru.next("")
-	Kataru.next("")
 	Kataru.next("Yes")
 	Kataru.next("")
 
