@@ -1,0 +1,44 @@
+---
+global:
+  config:
+    namespace: global
+    state:
+      coffee: 0.0
+      $passage.completed: 0.0
+    commands:
+      $character.set_animator_trigger:
+        clip: ""
+      wait:
+        duration: 0.3
+    characters:
+      May: ~
+      June: ~
+    attributes: {}
+    onEnter: ~
+    onExit:
+      set:
+        $passage.completed +: 1.0
+  passages:
+    Start:
+      - May: Welcome to my story!
+      - June: Want a coffee?
+      - choices:
+          "Yes": YesCoffee
+          "No": NoCoffee
+        timeout: 0.0
+        default: ~
+    YesCoffee:
+      - May: "Yeah, thanks!"
+      - set:
+          $coffee +: 1.0
+      - May.set_animator_trigger:
+          - drinkcoffee
+      - call: End
+    NoCoffee:
+      - May: No thanks.
+      - wait:
+          duration: 1.0
+      - June: Want to end this story?
+      - call: End
+    End:
+      - May: The end!
