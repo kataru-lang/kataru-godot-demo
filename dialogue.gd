@@ -4,7 +4,7 @@ extends Node
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Kataru.choices.connect(_on_choices)
-	Kataru.run_passage("Start")
+	Kataru.run("Start")
 	Kataru.next("")
 	Kataru.next("")
 	Kataru.next("Yes")

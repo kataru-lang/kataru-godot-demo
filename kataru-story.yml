@@ -27,18 +27,18 @@ global:
           "No": NoCoffee
         timeout: 0.0
         default: ~
+    NoCoffee:
+      - May: No thanks.
+      - wait:
+          duration: 1.0
+      - June: Want to end this story?
+      - call: End
     YesCoffee:
       - May: "Yeah, thanks!"
       - set:
           $coffee +: 1.0
       - May.set_animator_trigger:
           - drinkcoffee
-      - call: End
-    NoCoffee:
-      - May: No thanks.
-      - wait:
-          duration: 1.0
-      - June: Want to end this story?
       - call: End
     End:
       - May: The end!
