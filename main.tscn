@@ -7,9 +7,11 @@
 
 [node name="May" type="Node" parent="."]
 script = ExtResource("1_k4nxn")
+character = 2
 
 [node name="June" type="Node" parent="."]
 script = ExtResource("1_k4nxn")
+character = 1
 
 [node name="Dialogue" type="Node" parent="."]
 script = ExtResource("2_mmhx6")
