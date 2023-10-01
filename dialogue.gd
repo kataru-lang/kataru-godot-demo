@@ -1,19 +1,23 @@
 extends Node
 
+var is_run: bool = false
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	Kataru.choices.connect(_on_choices)
-	Kataru.run("Start")
-	Kataru.next("")
-	Kataru.next("")
-	Kataru.next("Yes")
-	Kataru.next("")
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	pass
+	if !self.is_run:
+		Kataru.choices.connect(_on_choices)
+		Kataru.run("Start")
+		Kataru.next("")
+		Kataru.next("")
+		Kataru.next("Yes")
+		Kataru.next("")
+	self.is_run = true
 
 
 func _on_choices(choices: Array, _timeout: float):

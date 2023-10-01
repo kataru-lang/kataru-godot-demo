@@ -1,17 +1,19 @@
 [gd_scene load_steps=3 format=3 uid="uid://c6diegvrfrts8"]
 
-[ext_resource type="Script" path="res://kataru-godot/character.gd" id="1_k4nxn"]
 [ext_resource type="Script" path="res://dialogue.gd" id="2_mmhx6"]
+[ext_resource type="Script" path="res://character.gd" id="2_ri85i"]
 
 [node name="Main" type="Node2D"]
 
-[node name="May" type="Node" parent="."]
-script = ExtResource("1_k4nxn")
-character = "May"
-
-[node name="June" type="Node" parent="."]
-script = ExtResource("1_k4nxn")
-character = "June"
-
 [node name="Dialogue" type="Node" parent="."]
 script = ExtResource("2_mmhx6")
+
+[node name="August" type="Node" parent="."]
+script = ExtResource("2_ri85i")
+kataru_name = "August"
+kataru_namespace = "global"
+
+[node name="May" type="Node" parent="."]
+script = ExtResource("2_ri85i")
+kataru_name = "May"
+kataru_namespace = "global"
