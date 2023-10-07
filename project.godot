@@ -17,4 +17,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Kataru="*res://kataru-godot/kataru.gd"
+Kataru="*res://addons/kataru/kataru.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/kataru/plugin.cfg")

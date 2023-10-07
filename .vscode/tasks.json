@@ -7,20 +7,20 @@
             "label": "build",
             "type": "shell",
             "windows": {
-                "command": "cd kataru-godot && cargo build --target x86_64-pc-windows-msvc --all-features"
+                "command": "cd addons/kataru && cargo build --target x86_64-pc-windows-msvc --all-features"
             },
             "linux": {
-                "command": "cd kataru-godot && cargo build --target x86_64-unknown-linux-gnu --all-features"
+                "command": "cd addons/kataru && cargo build --target x86_64-unknown-linux-gnu --all-features"
             }
         },
         {
             "label": "build (release)",
             "type": "shell",
             "windows": {
-                "command": "cd kataru-godot && cargo build --target x86_64-pc-windows-msvc --all-features --release"
+                "command": "cd addons/kataru && cargo build --target x86_64-pc-windows-msvc --all-features --release"
             },
             "linux": {
-                "command": "cd kataru-godot && cargo build --target x86_64-unknown-linux-gnu --all-features --release"
+                "command": "cd addons/kataru && cargo build --target x86_64-unknown-linux-gnu --all-features --release"
             }
         }
     ]

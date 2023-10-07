@@ -6,8 +6,8 @@ Demo using Kataru in Godot.
 From you Godot project, run:
 
 ```sh
-git submodule add https://github.com/kataru-lang/kataru-godot
-cd kataru-godot
+git submodule add https://github.com/kataru-lang/kataru-godot addons/kataru
+cd addons/kataru
 # Build commands will change based on your target platform
 cargo build --target x86_64-pc-windows-msvc --all-features
 cargo build --target x86_64-pc-windows-msvc --all-features --release
